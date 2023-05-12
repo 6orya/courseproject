@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/started.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>SimpleVisa - Ваш помощник в получении виз</title>
+
+  </head>
+  <body>
+  <script type="text/javascript" src="js/xmlsaver.js"></script>
+    <div class="fon"></div>
+    <div class="form">
+      <div id="close"><a href="javascript:void(0);"><img src="img/close-form.png"></a></div>
+      <div class="form-header">Оставьте заявку <br> и наш специалист свяжется с вами</div>
+      <form id="myForm">
+        <canvas id="canvas-3" width="135" height="262"></canvas>
+        <div><input type="text" id="name" name="name" placeholder="Введите имя" required></div>
+        <div><input type="text" id="phone" name="phone" placeholder="Введите телефон" required></div>
+        <div>
+          <label for="ques">Ваш вопрос</label>
+          <textarea id="ques" name="question" required></textarea>
+        </div>
+        <button id="submitBtn" type="button">Отправить</button>
+        <canvas id="canvas-4" width="262" height="135"></canvas>
+      </form>
+    </div>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="logo">
+                <img src="img/logo.svg">
+                <div>
+                  <div class="web-name">SimpleVisa</div>
+                  <p>Ваш помощник в получении виз в страны ЕС, США</p>
+                </div>
+              </div>
+              <a href="#" class="mobile-menu"><img src="img/menu.png"></a>
+            </div>
+            <div class="col-lg-5 position-static">
+              <ul class="menu">
+                <li><a href="services.html" id="nav-link">Услуги</a></li>
+                <li><a href="faq.html" id="nav-link">FAQ</a></li>
+                <li><a href="contacts.html" id="nav-link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <div class="contacts">
+                <div>
+                  <div class="phone"><a href="#"><span></span>+7 (993) 336-46-55</a></div>
+                  <div class="email"><a href="#"><span></span>help@simplevisa.by</a></div>
+               </div>
+                <a href="javascript:void(0);" class="ques">Задать вопрос</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="company-name">SimpleVisa <span>Визы в страны ЕС, США, Англию</span></div>
+        <div class="header-text">Подберем вам визу «под ключ»</div>
+        <div class="row position-relative">
+          <div class="col-lg-6">
+            <p class="from">От вашей заявки на нашем сайте<br> simplevisa.by</p>
+          </div>
+          <div class="col-lg-6"> 
+            <p class="to">До получения штампа с визой в вашем паспорте <br> Будем бороться за этот штамп!</p>
+          </div>
+          <canvas id="canvas" width="560px" height="90px"></canvas>
+        </div>
+      </div>
+    </header>
+    <section class="services">
+      <div class="container">
+        <div class="section-name">Популярные направления</div>
+        <canvas id="canvas-2" width="137px" height="10"></canvas>
+
+        <div class="row card-container">
+          <div class="col-lg-4">
+            <div id="card">
+              <img src="img/lines.png" class="hover-image">
+              <div class="card-text">Poland <br> Польша</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="card">
+              <img src="img/lines.png" class="hover-image">
+              <div class="card-text">Spain <br> Испания</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="card">
+              <img src="img/lines.png" class="hover-image">
+              <div class="card-text">Italy <br> Италия</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="card">
+              <img src="img/lines.png" class="hover-image">
+              <div class="card-text">США<br> Work&Travel <br> Гостевая</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="card">
+              <img src="img/lines.png" class="hover-image">
+              <div class="card-text">England <br> Англия </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="card">
+              <img src="img/lines.png" class="hover-image">
+              <div class="card-text">Cyprus <br> Кипр</div>
+            </div>
+          </div>
+        </div>
+        <div class="under-header">Кто мы?</div>
+        <canvas id="canvas-2" width="137px" height="10"></canvas>
+        <div class="row position-relative align-items-center">
+          <div class="col-lg-5">
+            <div class="services-photo-container">
+              <canvas id="canvas-3" width="135px" height="262px"></canvas>
+              <img src="img/photo.png" class="photo mw-100">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <p class="appeal">
+              Центр визовой поддержки SimpleVisa является коллективом профессионалов, который специализируется на получение виз в непростых случаях. Мы сотрудничаем напрямую с Посольствами разных стран, поэтому оказываем квалифицированную поддержку для получения виз как в традиционные направления для белорусов, такие как шенгенские визы в Польшу, Литву, Латвию, Германию, Францию, так и остальные страны Европы. Кроме Европейского Союза мы можем помочь с визами в США, Англия, Китай, Таиланд, Вьетнам, Индию, Гонконг и ОАЭ. На протяжении многих лет мы работаем с Туристско–экскурсионное унитарное предприятие «Беларустурист» старейшим туроператором в Республике Беларусь с огромным 67 – летним опытом работы.
+            </p>
+            <canvas id="canvas-4" width="262px" height="135px"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="section-name">ЦИФРЫ О НАС</div>
+        <canvas id="canvas-2" width="137px" height="10"></canvas>
+        <div class="row score">
+          <div class="col-lg-4">
+            <div class="position-relative experience"> <span><a>96%</a> клиентов</span> получали желаемое, с первой подачи
+              <div class="balls">
+                <img src="img/ball2.png" width="40px">
+                <img src="img/ball1.png" width="34px">
+                <img src="img/ball2.png" width="20px">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div> <span><a>10000+</a> клиентов </span> с 2022 по 2023</div>
+          </div>
+          <div class="col-lg-4">
+            <div><span><a>7 </a> дней </span> Столько занимает времени* получение визы</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+        <div class="section-name">наши партнеры</div>
+        <canvas id="canvas-2" width="137px" height="10"></canvas>
+        <div class="slider-partners">
+          <div class="prev">
+            <a href="#"><img src="img/slide-controll.png"></a>
+          </div>
+          <div class="slides">
+            <img src="img/slide-1.png">
+            <img src="img/slide-2.png">
+            <img src="img/slide-3.png">
+            <img src="img/slide-4.png">
+            <img src="img/slide-5.png">
+            <img src="img/slide-1.png">
+          </div>
+          <div class="next">
+            <a href="#"><img src="img/slide-controll.png"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="license">
+      <div class="container">
+        <div class="section-name">наши клиенты</div>
+        <canvas id="canvas-2" width="137px" height="10"></canvas>
+        <div class="slider-license">
+          <div class="prev">
+            <a href="#"><img src="img/slide-controll.png"></a>
+          </div>
+          <div class="slides">
+            <img src="img/license.png">
+            <img src="img/license.png">
+            <img src="img/license.png">
+            <img src="img/license.png">
+          </div>
+          <div class="next">
+            <a href="#"><img src="img/slide-controll.png"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="institute">
+      <div class="container">
+        <div class="section-name">О НАШЕЙ КОМПАНИИ</div>
+        <canvas id="canvas-2" width="137px" height="10"></canvas>
+        <div class="row position-relative about-inst-container">
+          <div class="col-lg-8">
+            <div class="about-inst">
+              <canvas id="canvas-3" width="135px" height="262px"></canvas>
+              <p>Помощь в оформлении виз – это наша работа, мы стараемся сделать наше сотрудничество максимально комфортным, качественным и удобным для клиента. Вам не придется тратить свое время на подготовку документов, изучение всех тонкостей оформления визы. Мы берем все трудности в оформлении документов на себя.
+                Наши специалисты в курсе всех последних изменений и нововведений Посольств в вопросах получения и оформления виз. Наши специалисты дадут максимально полные бесплатные консультации независимо от того, будете ли Вы оформлять визу у нас или самостоятельно.
+
+                Мы гарантируем индивидуальный подход к каждому клиенту и окажем помощь даже в самых сложных ситуациях. Мы ценим каждого клиента.
+              </p>
+
+                <canvas id="canvas-4" width="262px" height="135px"></canvas>
+            </div>
+          </div>
+          <img src="img/visaphoto.png">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="logo">
+              <img src="img/logo.svg">
+              <div class="text-center">
+                <div class="web-name">SimpleVisa</div>
+                <p>Ваш помощник в получении виз в страны ЕС, США</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <ul class="footer-menu">
+              <li><a href="services.html">Услуги</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <div class="contacts">
+              <div class="phone"><a href="#"><span></span>7 (993) 336-46-55</a></div>
+              <div class="email"><a href="#"><span></span>help@simplevisa.by</a></div>
+              <a href="javascript:void(0);" class="ques">Задать вопрос</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
