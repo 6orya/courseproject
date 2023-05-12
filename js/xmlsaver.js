@@ -26,7 +26,6 @@ function saveXmlData(xmlData) {
     const serializedXml = new XMLSerializer().serializeToString(xmlData);
     const blob = new Blob([serializedXml], { type: "application/xml;charset=utf-8" });
     const url = URL.createObjectURL(blob);
-
     const link = document.createElement("a");
     link.href = url;
     link.download = "formData.xml";
